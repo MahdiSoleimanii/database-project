@@ -1,3 +1,6 @@
-SELECT DISTINCT author_name, age
+SELECT author_name, age
 FROM Authors
-INNER JOIN AuthBooks ON Authors.ID = AuthBooks.author_ID;
+WHERE ID in (
+    SELECT author_ID
+    FROM AuthBooks
+);
