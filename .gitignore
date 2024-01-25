@@ -162,4 +162,5 @@ cython_debug/
 data.csv
 data/
 database/
+query_results/
 test_queries/temp_database
