@@ -164,3 +164,4 @@ data/
 database/
 query_results/
 test_queries/temp_database
+adv_query_results/
