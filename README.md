@@ -118,10 +118,8 @@ AuthBooks(ISBN, author_id, author_revenue)
 
 ### Categories
 $$
-\begin{array}{l}
-\text{ID} \rightarrow \text{category_name} \\
-\text{category_name} \rightarrow \text{ID}
-\end{array}
+\text{ID} \rightarrow \text{category$\_$name}
+\text{category$\_$name} \rightarrow \text{ID}
 $$
 
 ### Books
