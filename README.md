@@ -119,15 +119,15 @@ AuthBooks(ISBN, author_id, author_revenue)
 ### Categories
 $$
 \begin{array}{l}
-\text{ID} \rightarrow \text{category\_name} \\
-\text{category\_name} \rightarrow \text{ID}
+\text{ID} \rightarrow \text{category_name} \\
+\text{category_name} \rightarrow \text{ID}
 \end{array}
 $$
 
 ### Books
 $$
 \begin{array}{l}
-\text{ISBN} \rightarrow \text{title, pages, price, edition\_num, print\_series, category\_id} \\
+\text{ISBN} \rightarrow \text{title, pages, price, edition_num, print_series, category_id} \\
 \end{array}
 $$
 
@@ -158,7 +158,7 @@ $$
 ### AuthBooks
 $$
 \begin{array}{l}
-\text{ISBN} \rightarrow \text{author\_id, author\_revenue} \\
+\text{ISBN} \rightarrow \text{author_id, author_revenue} \\
 \end{array}
 $$
 
