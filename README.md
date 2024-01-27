@@ -117,48 +117,50 @@ AuthBooks(ISBN, author_id, author_revenue)
 ```
 
 ### Categories
-$$
-\text{ID} \rightarrow \text{category$\_$name}
-\text{category$\_$name} \rightarrow \text{ID}
-$$
+```math
+\begin{array}{l}
+\text{ID} \rightarrow \text{category\_name}\\
+\text{category\_name} \rightarrow \text{ID}
+\end{array}
+```
 
 ### Books
-$$
+```math
 \begin{array}{l}
-\text{ISBN} \rightarrow \text{title, pages, price, edition_num, print_series, category_id} \\
+\text{ISBN} \rightarrow \text{title, pages, price, edition\_num, print\_series, category\_id} \\
 \end{array}
-$$
+```
 
 ### Publishers
-$$
+```math
 \begin{array}{l}
 \text{ID} \rightarrow \text{city, manager\_name, total\_printed, total\_revenue} \\
 \text{publisher\_name} \rightarrow \text{city, manager\_name, total\_printed, total\_revenue} \\
 \text{publisher\_name} \rightarrow \text{ID} \\
 \text{ID} \rightarrow \text{publisher\_name}
 \end{array}
-$$
+```
 
 ### Authors
-$$
+```math
 \begin{array}{l}
 \text{ID} \rightarrow \text{author\_name, age, total\_revenue}
 \end{array}
-$$
+```
 
 ### PubBooks
-$$
+```math
 \begin{array}{l}
 \text{ISBN} \rightarrow \text{publisher\_id, publish\_date, publisher\_revenue} \\
 \end{array}
-$$
+```
 
 ### AuthBooks
-$$
+```math
 \begin{array}{l}
-\text{ISBN} \rightarrow \text{author_id, author_revenue} \\
+\text{ISBN} \rightarrow \text{author\_id, author\_revenue} \\
 \end{array}
-$$
+```
 
 ## Normalization
 All relations are in 1NF: All columns contain only atomic values
@@ -178,7 +180,7 @@ PublishersInfo(ID, city, manager_name, total_printed, total_revenue)
 ```
 
 ## Candidate Keys
-$$
+```math
 \begin{align*}
     \text{Categories}&: \text{ID}, \text{category\_name} \\
     \text{Books}&: \text{ISBN} \\
@@ -188,7 +190,7 @@ $$
     \text{PubBooks}&: \text{ISBN} \\
     \text{AuthBooks}&: \text{ISBN} \\
 \end{align*}
-$$
+```
 
 # How to `Run`
 
